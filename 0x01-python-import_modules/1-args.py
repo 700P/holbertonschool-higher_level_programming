@@ -2,16 +2,16 @@
     
 if __name__=="__main__":
     import sys
-
+    
+    x = len(sys.argv)
     b = (sys.argv)
-    a = len(sys.argv)
-
-    if a == 0:
+    if x == 1:
         print("{} {}".format(0, "arguments."))
-    if a == 1:
+    if x  == 2:
         print("{} {}".format(1, "argument:"))
         print("{}: {}".format(1, b[1]))
-    elif a == 2:
-        print("{} {}".format(((a) - 1), "arguments:"))
-        for x in range(1, a):
+
+    else:
+        print("{} {}".format(((x) - 1), "arguments:"))
+        for x in range(1, x):
             print("{}: {}".format(x, sys.argv[x]))
