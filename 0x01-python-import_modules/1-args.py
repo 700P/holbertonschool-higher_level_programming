@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-import sys
+    
+if __name__=="__main__":
+    import sys
 
-"""
-def titles(*inns):
-    for inns in sys.stdin:
-        print(len(inns))
+    x = (sys.argv)
+    a = len(sys.argv)
+    s = argument
+    
+    g = arguments:
 
-"""
-
-print(len(sys.argv) -1)
-
-for x in range (1, len(sys.argv)):
-    print((sys.argv[x]))
-
+    if a == 0:
+        print("{} {}".format(0, arguments.))
+    if a == 1:
+        print("{} {}".format(1, argument:))
+        print("{}: {}".format(a, x))
+    elif a == 2:
+        print("{} {}".format(a, arguments:))
+        print("{}: {}".format(a[h], g[h]))
