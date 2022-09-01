@@ -4,9 +4,9 @@ import random
 number = random.randint(-10, 10)
 x = number
 
-if x < 0: 
-    print("{} is negative".format(x));
+if x < 0:
+    print("{} is negative".format(x))
 if x == 0:
-    print("{} is zero".format(x));
+    print("{} is zero".format(x))
 if x > 0:
-    print("{} is positive".format(x));
+    print("{} is positive".format(x))
