@@ -2,5 +2,5 @@
 
 
 def pow(a, b):
-    if x = (a^b)
-    return(x)
+    x = pow(a, b)
+    print(x)
