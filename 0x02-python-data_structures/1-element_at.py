@@ -5,5 +5,6 @@ def element_at(my_list, idx):
     my_list = []
     
     for x in range(len(my_list)):
-        idx = list()
-        print("{} {}".format(idx[x], my_list[x]))
+        for h in idx:
+            h = []
+        print("{} {}".format(idx[x], my_list[h]))
