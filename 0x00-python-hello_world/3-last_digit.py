@@ -13,8 +13,8 @@ else:
    amp = 0
 
 if number > 5:
-    print("Last digit of {} is {} {} ".format(number, amp, state[0]))
+    print("Last digit of {} is {} {}".format(number, amp, state[0]))
 if number == 0:
-    print("Last digit of {} is {} {} ".format(number, amp, state[1]))
+    print("Last digit of {} is {} {}".format(number, amp, state[1]))
 if number < 6 & number > 0:
-    print("Last digit of {} is {} {} ".format(number, amp, state[2]))
+    print("Last digit of {} is {} {}".format(number, amp, state[2]))
