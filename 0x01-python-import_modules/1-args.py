@@ -8,7 +8,7 @@ if __name__ == "__main__":
     b = (sys.argv)
     if x == sys.argv[0]:
         print("{} {}".format(0, "arguments."))
-    elif x == 1:
+    elif x == sys.argv[1]:
         print("{} {}".format(1, "argument:"))
         print("{}: {}".format(1, b[1]))
 
