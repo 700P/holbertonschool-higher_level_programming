@@ -2,5 +2,5 @@
 
 
 def print_last_digit(number):
-    x = str.number[-1:]
-    return(x)
+    print(abs(number) % 10, end="")
+    return abs(number) % 10
