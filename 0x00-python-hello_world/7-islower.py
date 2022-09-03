@@ -2,7 +2,7 @@
 
 
 def islower(c):
-        if c == chr(97, 123):
+        if chr(97) >= c <= chr(123):
             return True
         else:
             return False
