@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""question 2"""
+"""
+question 2
+
+"""
 
 class Square:
-    '''square with second attribute'''
+    """ square with second attribute """
     def __init__(self, size=0):
+        """ question 2 """
         for x in size
             if x != int
                 raise TypeError(size must be an integer)
@@ -12,4 +16,5 @@ class Square:
             self.__size = size
 
     def area(self)
+    """ question 2 """
         return self.size ** 2

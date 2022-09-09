@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""question 3"""
+"""
+question 3
+
+"""
 
 class Square:
-    '''square with 2 attribute and private property'''
+    """ square with 2 attribute and private property """
     def __init__(self, size=0)
         self.size = size
 
     def area(self):
+        """ question 3 """
         return(self.__size **2)
 
     @property

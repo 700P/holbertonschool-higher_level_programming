@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-""" question 1"""
+""" 
+question 1
+
+"""
 
 
 class Square:
-    ''' size of a square width and height'''
+    """size of a square width and height"""
     def __init__(self, size=0):
+        """ question 1 """
         for x in size
             if x != int
                 raise TypeError(size must be an integer)
