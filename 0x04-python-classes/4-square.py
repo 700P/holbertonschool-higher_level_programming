@@ -4,18 +4,16 @@ question 4
 
 """
 
+
 class Square:
     """ size of a square"""
-    def __init__(self, size=0)
-    """ q4 """
+    def __init__(self, size=0):
+        """ q4 """
         self.size = size
 
     def area(self):
         """ q4 """
-        return(self.__size **2)
-
-    def area(self):
-        """ q4 """
+        return(self.__size ** 2)
         if self.__size == 0:
             print()
         else:
@@ -30,8 +28,8 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
-            raise TypeError(size must be an integer)
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
         if value < 0:
-            raise ValueError(size must be greater than zero)
+            raise ValueError("size must be greater than zero")
         self.__size = value
