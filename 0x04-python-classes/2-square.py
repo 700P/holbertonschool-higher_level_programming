@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""question 2"""
 
 class Square:
     '''square with second attribute'''
