@@ -5,7 +5,7 @@ question 2
 """
 
 class Square:
-    """ square with second attribute """
+    """ size of a sqare"""
     def __init__(self, size=0):
         """ question 2 """
         for x in size

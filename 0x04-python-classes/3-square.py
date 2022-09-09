@@ -5,7 +5,7 @@ question 3
 """
 
 class Square:
-    """ square with 2 attribute and private property """
+    """ size of a square"""
     def __init__(self, size=0)
         self.size = size
 

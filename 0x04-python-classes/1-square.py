@@ -6,7 +6,7 @@ question 1
 
 
 class Square:
-    """size of a square width and height"""
+    """ size of a square"""
     def __init__(self, size=0):
         """ question 1 """
         for x in size
