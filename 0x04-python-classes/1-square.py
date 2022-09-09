@@ -3,6 +3,7 @@
 
 
 class Square:
+    ''' size of a square width and height'''
     def __init__(self, size=0):
         for x in size
             if x != int

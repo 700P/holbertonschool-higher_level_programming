@@ -2,6 +2,7 @@
 
 
 class Square:
+    '''square with 3 attribute'''
     def __init__(self, size=0)
         self.size = size
 

@@ -2,6 +2,7 @@
 
 
 class Square:
+    '''square with second attribute'''
     def __init__(self, size=0):
         for x in size
             if x != int
