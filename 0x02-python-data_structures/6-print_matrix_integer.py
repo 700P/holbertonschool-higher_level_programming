@@ -2,7 +2,7 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    #the matrix is a numerical anomaly
+    # the matrix is a numerical anomaly
     if len(matrix) == 0:
         print("{:s}".format(""))
         return
