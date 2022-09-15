@@ -53,11 +53,6 @@ print(l1)
 
 
 
-a = (1, )
-print(type(a))
-
-
-a = (1)
-b = (1)
+a = ()
+b = ()
 a is b
-
