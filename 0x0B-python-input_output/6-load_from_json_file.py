@@ -5,6 +5,6 @@ import json
 
 def load_from_json_file(filename):
     with open(filename, 'r', encoding='utf=8') as terp:
-        return json.load(terp)
+        return json.loads(terp.read())
 
 

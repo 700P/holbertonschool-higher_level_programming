@@ -2,6 +2,6 @@
 
 
 def append_write(filename="", text=""):
-    with open(filename, 'a', encoding='utf=8') as terp:
+    with open(filename, 'a', encoding='utf-8') as terp:
         return terp.write(text)
 
