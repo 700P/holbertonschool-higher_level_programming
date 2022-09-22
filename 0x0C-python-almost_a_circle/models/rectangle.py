@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" rectangle metrics """
+""" rectangle metrics
+# 5 is confusing
+"""
 
 
 from models.base import Base
@@ -16,6 +18,10 @@ class Rectangle(Base):
 
     def area(self):
         return (self.__width * self.__height)
+
+    def display(self):
+        print('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
+              self.__height, end='')
 
     def validation_of_setters(self, name, value):
         """ (value input) parsing check ie valid value check """
@@ -43,7 +49,7 @@ class Rectangle(Base):
     def height(self):
         """get attributes of height """
         return self.__height
-    
+     
     @height.setter
     def height(self, value):
         """ set attributes of height """
