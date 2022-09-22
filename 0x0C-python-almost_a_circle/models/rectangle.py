@@ -9,22 +9,18 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Highway connector __init__ """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     def validation_of_setters(self, name, value):
         """ (value input) parsing check ie valid value check """
         if type(value) is not int:
             raise TypeError('{} must be an integer'.format(name))
-        if value <= 0 and name in ['width'or 'height']:
+        if value <= 0 and name in ['height', 'width']:
             raise ValueError('{} must be > 0'.format(name))
-        if value <= 0 and name in ['height']:
-            raise ValueError('{} must be > 0'.format(name))
-        if value < 0 and name in ['x']:
-            raise ValueError('{} must be >= 0'.format(name))
-        if value < 0 and name in ['y']:
+        if value < 0 and name in ['y', 'x']:
             raise ValueError('{} must be >= 0'.format(name))
 
 
