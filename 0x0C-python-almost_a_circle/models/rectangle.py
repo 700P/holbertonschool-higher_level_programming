@@ -14,38 +14,61 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+    def validation_of_setters(self, name, value):
+        """ (value input) parsing check ie valid value check """
+        if type(value) is not int:
+            raise TypeError('{} must be an integer'.format(name))
+        if value <= 0 and name in ['width'or 'height']:
+            raise ValueError('{} must be > 0'.format(name))
+        if value <= 0 and name in ['height']:
+            raise ValueError('{} must be > 0'.format(name))
+        if value < 0 and name in ['x']:
+            raise ValueError('{} must be >= 0'.format(name))
+        if value < 0 and name in ['y']:
+            raise ValueError('{} must be >= 0'.format(name))
+
+
+
     @property
     def width(self):
-        """ width """
+        """ get attributes of width """
         return self.__width
     
     @width.setter
     def width(self, value):
+        """ set attributes of width """
+        self.validation_of_setters('width', value)
         self.__width = value
 
     @property
     def height(self):
-        """ height """
+        """get attributes of height """
         return self.__height
     
     @height.setter
     def height(self, value):
+        """ set attributes of height """
+        self.validation_of_setters('height', value)
         self.__height = value
 
     @property 
     def x(self):
-        """ x """
+        """get attributes of x """
         return self.__x
     
     @x.setter
     def x(self, value):
+        """ set attributes of y """
+        self.validation_of_setters('x', value)
         self.__x = value
 
     @property 
     def y(self):
-        """ y """
+        """ get attributes of  y """
         return self.__y
     
     @y.setter
     def y(self, value):
+        """ set attributes of y """
+        self.validation_of_setters('y', value)
         self.__y = value
