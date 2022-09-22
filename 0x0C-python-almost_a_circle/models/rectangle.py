@@ -16,16 +16,20 @@ class Rectangle(Base):
 
 @property
     def width(self)
+    """ width """
         return self.__width
 
 @property
     def height(self)
+    """ height """
         return self.__height
 
 @property 
     def x(self)
+    """ x """
         return self.__x
 
 @property 
     def y(self)
+    """ y """
         return self.__y
