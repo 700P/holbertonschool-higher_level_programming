@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Base Class for managaging Id of all other classes/ class instances"""
+""" Base Class for managaging Id of all other classes/ class instances """
 
 
 class Base:
@@ -14,7 +14,7 @@ class Base:
         else:
              Base.__nb_objects += 1
 
-             self.id = self.__nb_objects
+             self.id = Base.__nb_objects
 
 
             
