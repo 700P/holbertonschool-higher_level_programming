@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" rectangle metrics
-# 5 is confusing
-"""
+""" rectangle metrics # 5 is confusing """
 
 
 from models.base import Base
@@ -17,6 +15,7 @@ class Rectangle(Base):
         self.y = y
 
     def area(self):
+        """ area """
         return (self.__width * self.__height)
 
     def display(self):
