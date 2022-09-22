@@ -20,6 +20,7 @@ class Rectangle(Base):
         return (self.__width * self.__height)
 
     def display(self):
+        """ print in hashtags """
         print('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
               self.__height, end='')
 
