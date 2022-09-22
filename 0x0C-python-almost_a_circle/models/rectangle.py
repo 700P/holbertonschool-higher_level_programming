@@ -14,6 +14,9 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def area(self):
+        return (self.__width * self.__height)
+
     def validation_of_setters(self, name, value):
         """ (value input) parsing check ie valid value check """
         if type(value) is not int:
@@ -68,3 +71,5 @@ class Rectangle(Base):
         """ set attributes of y """
         self.validation_of_setters('y', value)
         self.__y = value
+
+    
