@@ -12,7 +12,7 @@ class Square(Rectangle):
         self.__width = size
         self.__height = size
 
-    def __str__(self **kwargs):
+    def __str__(self, **kwargs):
         """ change string input """
         return '[Square] ({}) {}/{} - {}'.format(self.id, self.x, self.y, self.size)
 
@@ -27,7 +27,7 @@ class Square(Rectangle):
         self.width = value
 
 
-    def update(self, *args, **kwargs)
+    def update(self, *args, **kwargs):
         """ update the square attribute """
         if len(args):
             """args non-kwargs"""
