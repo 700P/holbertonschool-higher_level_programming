@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" Base Class for managaging Id of all other classes/ class instances """
+"""
+Base Class for managaging Id of all other classes/ class instances 
+"""
+
 import json
 
 
@@ -33,6 +36,9 @@ class Base:
             list_objs = [objct.to_dictionary() for objct in list_objs]
         with open("{}.json".format(cls.__name__), "w") as x:
             x.write(cls.to_json_string(list_objs))
+    
+    @staticmethod
+        """ return the list of the json string representation """
+        def from_json_string(json_string):
 
-        
 
