@@ -26,9 +26,13 @@ class Base:
             return json.dumps( list_dictionaries)
         
 
-            
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """ save to json """
+        if list_objs is not None:
+            list_objs = [objct.to_dictionary() for objct in list_objs]
+        with open("{}.json".format(cls.__name__), "w") as x:
+            x.write(cls.to_json_string(list_objs))
 
-# private instance base.__no_objects
-#                   ^   ^ 
-# public instance 'self.id'
-#                  ^   ^
+        
+
