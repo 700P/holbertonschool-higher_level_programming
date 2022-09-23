@@ -78,6 +78,6 @@ class Rectangle(Base):
         self.validation_of_setters('y', value)
         self.__y = value
 
-    def __str_(self):
+    def __str__(self):
         """ overide string method """
-        return ("[Rectangle] ({}) {}/{} - {}/{}").format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
