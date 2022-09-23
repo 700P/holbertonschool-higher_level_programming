@@ -38,5 +38,6 @@ class Base:
     @staticmethod
         """ return the list of the json string representation """
         def from_json_string(json_string):
+            "nest part of the question "
 
 
