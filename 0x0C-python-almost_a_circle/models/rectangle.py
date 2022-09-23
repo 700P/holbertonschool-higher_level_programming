@@ -82,5 +82,17 @@ class Rectangle(Base):
         """ overide string method """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
 
-    def def update(self, *args):
-        self.update = args.__str__
+    def update(self, *args):
+        """ assign an argument to each attribute """
+        if len(args):
+            for iterargs, arg in enumerate(args):
+                if iterargs == 0:
+                    self.id = arg
+                elif iterargs == 1:
+                    self.__width = arg
+                elif iterargs == 2:
+                    self.__height = arg
+                elif iterargs == 3:
+                    self.__x = arg
+                elif iterargs == 4:
+                    self.__y = arg
