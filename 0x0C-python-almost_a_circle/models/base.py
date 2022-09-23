@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Base Class for managaging Id of all other classes/ class instances 
-"""
+""" Base Class for managaging Id of all other classes/ class instances """
 
 import json
 
