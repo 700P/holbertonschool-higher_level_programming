@@ -36,8 +36,7 @@ class Base:
             x.write(cls.to_json_string(list_objs))
     
     @staticmethod
-        """ return the list of the json string representation """
-        def from_json_string(json_string):
-            "nest part of the question "
+    def from_json_string(json_string):
+        """" retrun the json representation of a string list """
 
 
