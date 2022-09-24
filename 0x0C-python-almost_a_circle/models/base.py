@@ -48,8 +48,12 @@ class Base:
         """ class method that returns an instance with all attributes """
         if cls.__name__ == "Rectangle":
             dum_create = cls(4, 5)
-        else:
-            dum_create = cls(6)
+        
+        elif cls.__name__ == "Square":
+            dum_create = cls(1)
 
-        dum_create.update(**dictionary)
+        else:
+            dum_create = None
+
+        cls.update(dum_create, **dictionary)
         return dum_create
