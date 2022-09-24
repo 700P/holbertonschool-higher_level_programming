@@ -42,4 +42,14 @@ class Base:
         if not json_string or json_string is None:
             return []
         return loads(json_string)
+    
+    @classmethod
+    def create(cls, **dictionary):
+        """ class method that returns an instance with all attributes """
+        if cls.__name__ == "Rectangle":
+            dum_create = cls(4, 5)
+        else:
+            dum_create = cls(6)
 
+        dum_create.update(**dictionary)
+        return dum_create
