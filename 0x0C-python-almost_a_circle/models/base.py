@@ -2,6 +2,7 @@
 """ Base Class for managaging Id of all other classes/ class instances """
 
 import json
+from json import dumps, loads
 
 
 class Base:
@@ -38,5 +39,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """" retrun the json representation of a string list """
-
+        if not json_string or json_string is None:
+            return []
+        return loads(json_string)
 
