@@ -61,16 +61,10 @@ class Base:
     @classmethod 
     def load_from_file(cls):
         """ return a list of instances """
-        x_save = '{}.csv'.format(cls.__name__)
+        filename = cls.__name__ + ".json"
         try:
-            with open(x_save, mode='r', newline='') as x_file_saves:
-                if cls.__name__ == 'Square':
-                    x = ['id', 'size', 'x', 'y']
-                else:
-                    x = ['id', 'width', 'height', 'x', 'y']
-                k_csv = csv.DictReader(x_file_saves, fieldnames=tm)
-                gym = [{key: int(value) for key, value in dict.items()}
-                       for dict in k_csv]
-                return [cls.create(**dics) for kids in gym]
-        except IOError:
+            with open(filename, "r") as JsonFile:
+                dir_list = Base.from_json_string(JsonFile.read())
+                return [cls.create(**x) for x in dir_list]
+        except FileNotFoundError:
             return []
