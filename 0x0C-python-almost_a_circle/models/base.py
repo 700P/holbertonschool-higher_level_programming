@@ -50,7 +50,7 @@ class Base:
             dum_create = cls(4, 5)
         
         elif cls.__name__ == "Square":
-            dum_create = cls(1)
+            dum_create = cls(6)
 
         else:
             dum_create = None
@@ -61,7 +61,6 @@ class Base:
     @classmethod 
     def load_from_file(cls):
         """ return a list of instances """
-
         x_save = '{}.csv'.format(cls.__name__)
         try:
             with open(x_save, mode='r', newline='') as x_file_saves:
