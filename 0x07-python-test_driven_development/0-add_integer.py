@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-raise an integer error for add inter method
-"""
+""" raise an integer error for add inter method """
 
 
 def add_integer(a, b=98):
