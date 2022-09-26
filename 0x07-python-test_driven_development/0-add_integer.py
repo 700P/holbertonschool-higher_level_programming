@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 raise an integer error for add inter method
 """
