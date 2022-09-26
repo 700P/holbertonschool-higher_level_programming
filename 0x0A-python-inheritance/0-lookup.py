@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" 
-list 
-"""
+""" list """
 
 def lookup(obj):
     """ dir func to lookup modules methods """
