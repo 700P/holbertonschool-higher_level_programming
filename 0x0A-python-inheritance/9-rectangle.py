@@ -9,6 +9,7 @@ BaseGeometry = __import__("8-rectangle").BaseGeometry
 class Rectangle(BaseGeometry):
     """ Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py) """
     def __init__(self, width, height):
+        """ indentify Rectangle class """
         self.__width = width
         self.__heigt = height
         self.integer_validator = ("width", width)
