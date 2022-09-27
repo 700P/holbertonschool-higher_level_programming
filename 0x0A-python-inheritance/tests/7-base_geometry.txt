@@ -1,0 +1,14 @@
+The ``7-base_geometry`` module
+============================
+
+Using ``integer_validator``
+---------------------
+
+This is a text file in reStructured Text format. First import ``integer_validator`` from the ``7-base_geometry`` module:
+
+     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Now use it:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("my_int" 18)
