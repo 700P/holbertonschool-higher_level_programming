@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""
-sorted list ascending
-"""
+"""sorted list ascending"""
+
 
 class MyList(list):
-    """ print parent (list) """
+    """ subclass of List """
     def print_sorted(self):
+        """prints the list ascend"""
         print(sorted(self))
-
