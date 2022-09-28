@@ -4,6 +4,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """ inherit the Rectanle attributes """
     def __init__(self, size, x=0, y=0, id=None):
@@ -14,7 +15,7 @@ class Square(Rectangle):
 
     def __str__(self, **kwargs):
         """ change string input """
-        return '[Square] ({}) {}/{} - {}'.format(self.id, self.x, self.y, self.size)
+        return'[Square] {} {}/{}-{}'.format(self.id, self.x, self.y, self.size)
 
     @property
     def size(self):
@@ -25,7 +26,6 @@ class Square(Rectangle):
     def size(self, value):
         """ set the height or width value """
         self.width = value
-
 
     def update(self, *args, **kwargs):
         """ update the square attribute """
