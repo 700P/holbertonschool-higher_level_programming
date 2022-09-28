@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ replace all attributes """
 
+
 class Student:
     """ student class """
     def __init__(self, first_name, last_name, age):
